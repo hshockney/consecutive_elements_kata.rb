@@ -8,9 +8,14 @@ class Consecutive_elements < Minitest::Test
   assert_equal(Array,results.class)
   end
   
-  def test_check_for_empty_array
+  #def test_check_for_empty_array
+  #results=max_number_consecutive_elements
+  #assert_equal(0,results.count)
+  #end
+  
+  def test_for_elements_in_array
   results=max_number_consecutive_elements
-  assert_equal(0,results.count)
+  assert_equal(10,results.count)
   end
 
 
