@@ -4,20 +4,12 @@ require"minitest/autorun"
 class Consecutive_elements < Minitest::Test
 
   def test_check_for_an_array
-  results=max_number_consecutive_elements
+  results=identical_element_array
   assert_equal(Array,results.class)
   end
+ 
   
-  #def test_check_for_empty_array
-  #results=max_number_consecutive_elements
-  #assert_equal(0,results.count)
-  #end
-  
-  def test_for_elements_in_array
-  results=max_number_consecutive_elements
-  assert_equal(10,results.count)
-  end
-
+ 
 
 
 
