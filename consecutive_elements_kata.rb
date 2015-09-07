@@ -1,3 +1,8 @@
-def identical_element_array
-  max_number=[]
-  end
+
+
+
+def empty_array
+empty_array=[]
+
+end
+  empty_array
