@@ -3,11 +3,14 @@ require"minitest/autorun"
 
 class Consecutive_elements < Minitest::Test
   def test_check_for_empty_arrays
-  results=0
-  assert_equal(0,results )
+  results=check_arrays_consecutive_identical_elements
+  assert_equal(nil,results)
   end
  
-
+#def test_check_for_duplicates
+#results=2
+#assert_equal(2,results)
+#end
 
 
 
