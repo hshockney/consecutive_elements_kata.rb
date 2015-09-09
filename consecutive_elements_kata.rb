@@ -1,24 +1,16 @@
-def check_arrays_consecutive_identical_elements
-my_method do |v2, v7, v8|
+ def find_max_consecutive_identical_elements(any_array)
+  consecutive_elements = []
+  count_of_consecutive_elements = []
+  any_array.each do | value |
+if consecutive_elements.length == 0
+    consecutive_elements << value 
+	elsif 
+	value == consecutive_elements[-1]
+  consecutive_elements << value
+else
+    count_of_consecutive_elements << consecutive_elements.count
+consecutive_elements = []
 end
 end
-puts @check_arrays_consecutive_identical_elements
-
-def my_method
-@my_method
-end
-
-v1=[1, 2, 3, 4]
-#puts v1
-v2=[]
-puts v2
-v3=[1, 2, 1, 2]
-#puts v3
-v4=[2, 2, 2]
-#puts v4
-v5=[1, 2, 2, 2, 3, 3, 1, 1]
-#puts v5
-v6=["a", "a", "b", "a"]
-#puts v6
-v7=[]
-v8=[]
+  count_of_consecutive_elements << consecutive_elements.count
+  count_of_consecutive_elements.max end
